@@ -1,0 +1,84 @@
+/* здесь используйте глобальные селекторы img, body, html и так далее */
+body {
+  margin: 0;
+}
+
+main {
+  background-image: url(../image/location_6@2x.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.video-list {
+  width: 80%;
+  min-height: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.video__item {
+  display: block;
+}
+
+.video__button {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  outline: 5px solid green;
+  border: none;
+  padding: 0;
+  background-position: center;
+  cursor: pointer;
+}
+
+  .video__button--fox {
+    background-image: url(../image/img__fox@2x.webp);
+  }
+
+  .video__button--kesha {
+    background-image: url(../image/img__kesha@2x.webp);
+  }
+
+  .video__button--tuchka {
+    background-image: url(../image/img__tuchka@2x.webp);
+  }
+
+  .video__button--boom {
+    background-image: url(../image/img__boom@2x.webp);
+    background-size: cover;
+
+  }
+
+  .video__button--disco {
+    background-image: url(../image/img__dance@2x.webp);
+
+  }
+
+  .video__button--end {
+    background-image: url(../image/img__end@2x.webp);
+  }
+
+  .video__button:hover {
+    background-color: white;
+    scale: 1.2;
+    transition: scale 0.3s ease;
+  }
