@@ -1,12 +1,12 @@
 /* в этот файл добавляет скрипты*/
 // const URL = 'https://rutube.ru/play/embed/6b1064118ff99c99c0ad98e91a413163?autoplay=true&loop=false';
 const URL = [
-  '6b1064118ff99c99c0ad98e91a413163',
-  '60706cd64b62d4eee0dda87a3d829003',
-  'disco',
-  'fc09fbb41a8ab4cdd75aeecdc0ab0d35',
-  '91615ea3e46c2302670fc8a054bcd925',
-  '391b736abb9b00e5a29cd67d7c13d5f3'
+  '6b1064118ff99c99c0ad98e91a413163/?p=q3RQkybW0UITp08LuFr1cw',
+  '60706cd64b62d4eee0dda87a3d829003/?p=8QnA3sNCWOmofr5tKeFd4Q',
+  '4b84b1dfb927ac477c6d6b918ade8f6e/?p=kAk8JM_FWO9r4tly830zPg',
+  'fc09fbb41a8ab4cdd75aeecdc0ab0d35/?p=XQtR9QmSu-3FppEZvHqOMw',
+  'ead9fa6f7d468217a4f7ee8ffb079877/?p=1L6aUj_74aZ8_K9CUQ7WQQ',
+  '391b736abb9b00e5a29cd67d7c13d5f3/?p=XMvodhuby1xT_i-_lIejlQ'
 ];
 const video = document.querySelector('.video');
 // const buttonPlay = video.querySelector('.video__button--fox');
@@ -15,7 +15,7 @@ function createIframe (id) {
   const iframe = document.createElement('iframe');
   iframe.setAttribute('allowfullscreen', '');
   iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen');
-  iframe.setAttribute('src', 'https://rutube.ru/play/embed/'.concat(URL[id], '?autoplay=true&loop=false'));
+  iframe.setAttribute('src', 'https://rutube.ru/play/embed/'.concat(URL[id], '&autoplay=true&loop=false'));
   // iframe.setAttribute('loading', 'lazy');
   // iframe.setAttribute('height', '170');
   // iframe.setAttribute('width', '320');
